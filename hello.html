@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stop Watch</title>
+    <title>Pokemon</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./skull.png">
 </head>
 <body>
 
-    <h1 id="heading">Stopwatch</h1>
+    <!-- <h1 id="heading">Pokemon</h1> -->
+     <img id="heading" src="title.png" alt="">
 
-    <div id="content">
+    <form id="form">
+        <input type="text" id="input" placeholder="Enter Pokemon Name" autocomplete="off">
+        <br>
+        <button id="search" type="submit">Search</button>
+    </form>
 
-        <div id="timer">00:00:00:000</div>
-
-        <div id="controls">
-            <button id="start" onclick="start()">Start</button>
-            <button id="stop" onclick="stop()">Stop</button>
-            <button id="clear" onclick="rst()">Clear</button>
-        </div>
-    </div>
-
+    <img id="display" src="" alt="">
     <script src="script.js"></script>
 
 </body>

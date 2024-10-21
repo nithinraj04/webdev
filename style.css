@@ -1,43 +1,49 @@
 #heading{
     text-align: center;
     font-family: monospace;
-    font-size: 4em;
+    font-size: 6em;
+    transform: scale(0.75);
+    margin-bottom: 15px;
+    /* color:hsl(60, 71%, 42%); */
 }
 
-#content{
+body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: solid 1px black;
-    width: 50%;
-    /* Place it in middle of screen */
-    position: absolute;
-    left: 25%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-image: url('background.png');
 }
 
-#timer{
-    font-size: 3em;
-    font-family: monospace;
-    padding: 10px;
-}
-
-#controls{
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
+#display{
+    margin: 20px 20px;
+    display:block;
 }
 
 button{
-    margin:10px;
-    padding: 10px;
-    width: 100px;
-    font-family: monospace;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 3px 3px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    background-color: hsla(118, 98%, 50%, 0.646);
 }
 
 button:hover{
-    background-color: #8d8d8d;
+    cursor: pointer;
+    background-color: hsla(118, 98%, 50%, 0.916);
+}
+
+input[type='text'] { 
+    font-family: sans-serif; 
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#display{
+    /* border-radius: 50%; */
+    width: 200px;
+    height: 200px;
 }
